@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MY TEMPLATE WITH BOOTSTRAP</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Anek+Latin:wght@800&family=Anybody:wght@800&family=Arvo:wght@700&family=Asul:wght@700&family=Bakbak+One&family=Berkshire+Swash&family=Bevan&family=Bitter:wght@600&family=Black+Han+Sans&family=Calistoga&family=Candal&family=Changa+One&family=Chango&family=Chonburi&family=Coda+Caption:wght@800&family=Coiny&family=Crete+Round&family=DM+Serif+Text&family=Days+One&family=Dela+Gothic+One&family=Frank+Ruhl+Libre:wght@700&family=Gelasio:wght@700&family=Goblin+One&family=Golos+Text:wght@900&family=Jockey+One&family=Kanit:wght@500&family=Lato:wght@700&family=Lilita+One&family=Lusitana:wght@700&family=Manrope:wght@700&family=Modak&family=Nanum+Myeongjo:wght@800&family=Odor+Mean+Chey&family=Orelega+One&family=PT+Serif:wght@700&family=Palanquin+Dark:wght@700&family=Paytone+One&family=Plus+Jakarta+Sans:wght@700&family=Poller+One&family=Poppins:wght@500&family=Quattrocento+Sans:wght@700&family=Radio+Canada:wght@700&family=Ramabhadra&family=Rammetto+One&family=RocknRoll+One&family=Rowdies:wght@300&family=Rubik:wght@900&family=Secular+One&family=Source+Serif+4:wght@800&family=Taviraj:wght@700&family=Tilt+Warp&family=Titan+One&family=Unbounded&family=Urbanist:wght@700&family=Wendy+One&family=Yeseva+One&display=swap" rel="stylesheet">
+    <!-- Navbar fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Asul&family=Cabin&family=DM+Sans&family=Dhurjati&family=Figtree&family=Gidugu&family=Heebo:wght@300&family=Josefin+Sans:wght@300&family=Jost:wght@300&family=Kameron&family=Kanit:wght@300&family=Katibeh&family=Lexend+Deca:wght@300&family=Lexend:wght@300&family=Marcellus&family=Markazi+Text:wght@500&family=Merriweather+Sans:wght@300&family=Mukta+Malar&family=Nunito:wght@300&family=Outfit:wght@300&family=Quicksand&family=Salsa&family=Sree+Krushnadevaraya&family=Sulphur+Point&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <!-- Heading fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Arbutus+Slab&family=Arima:wght@500&family=Cantora+One&family=Carlito:wght@700&family=Charis+SIL:wght@700&family=Cherry+Swash&family=Copse&family=DM+Sans:wght@500&family=DM+Serif+Text&family=Fahkwang:wght@600&family=Flamenco&family=Fraunces:wght@500&family=Fredoka:wght@500&family=Gayathri:wght@700&family=Gloock&family=Inria+Serif:wght@700&family=Instrument+Sans:wght@500&family=Jost:wght@500&family=Kameron:wght@700&family=Libre+Bodoni:wght@700&family=Milonga&family=Montagu+Slab:wght@500&family=Montserrat:wght@500&family=Orelega+One&family=Poppins&family=Red+Rose&family=Roboto&family=Rufina:wght@700&family=Sansita&family=Sawarabi+Gothic&family=Song+Myung&family=Source+Sans+Pro:wght@600&family=Spirax&family=Varela&family=Vidaloka&family=Wix+Madefor+Display:wght@600&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <!-- paragraph fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Alata&family=Almarai&family=Anybody:wght@200&family=Artifika&family=Be+Vietnam+Pro:wght@300&family=Cherry+Swash&family=Gayathri&family=Instrument+Sans&family=Junge&family=Open+Sans:wght@300&family=Pathway+Extreme:wght@300&family=Poppins:wght@200&family=Quando&family=Questrial&family=Roboto+Flex&family=Roboto:wght@300&family=Rubik:wght@300&family=Schibsted+Grotesk&family=Sora:wght@300&family=Spline+Sans:wght@300&family=Syne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/bootstrap-extensions.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+    
+<body>
+    <div class="preloader">
+      <img src="images/preloader.gif" class="img-fluid" alt="preloader">
+    </div>
+    <header>
+    <!-- ============== Logo and Navbar part ============================ -->
+     
+       
+    <nav class="fixed-top">
+      <div class="row">
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <img src="images/logo.png" alt="logo" class="img-fluid bg-dark m-2" style="border-radius:0 0 20px 20px;">
+        </div>
+        <div class="col-sm-10 col-md-10 col-lg-10 d-flex align-items-center">
+          <div class="container me-0 text-end">
+               <ul class="mb-0">
+                   <li class="Banner active"><a href="#Banner">Home</a></li>
+                   <li class="About"><a href="#About">About</a></li>
+                   <li class="Service"><a href="#Service">Service</a></li>
+                   <li class="Project"><a href="#Project">Project</a></li>
+                   <li class="Team"><a href="#Team">Team</a></li>
+                   <li class="Satisfaction"><a href="#Satisfaction">Satisfaction</a></li>
+                   <li class="Contact"><a href="#Contact">Contact</a></li>
+               </ul>
+           </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+    
+    
+    
+  <main>
+   <!-- ============================ Banner part ================================= -->
+      <section id="Banner" style="background-image: url(images/banner.jpg); background-position: center; background-size: cover;background-repeat: no-repeat; margin-top: 125px;">
+        <div class="container">
+          <div class="row py-2 mb-5">
+            <div class="col-12 text-start" style="margin-top: 130px;">
+              <h1 style="font-family: 'Berkshire Swash', cursive; font-size: 80px; color: #C5001E;">Hello</h1>
+                <h2 class="text-white" style="font-family: 'Rubik', sans-serif; font-size: 50px; font-weight: 900;">Myself <span class="word" style="color: #C5001E; font-family: 'Rubik', sans-serif; font-size: 50px; font-weight: 900;"></span></h2>
+              <h4 class="txt-yellow" style="font-family: 'Rubik', sans-serif; font-size: 40px; font-weight: 900;">I'm <span class="typed-text" style="font-family: 'Rubik', sans-serif; font-size: 40px; font-weight: 900; color: #fff;"></span><span class="cursor" style=" display: inline-block; margin-left: 0.1rem; width: 3px; animation: blink 1s infinite;">&nbsp;</span></h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 mx-auto">
+                <div class="wrapper d-flex justify-content-center">
+                   <a class="Button" href="#About" style="font-family: 'Yusei Magic', sans-serif;">Know me</a>
+               </div>
+               <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+            </div>
+             <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                   <defs>
+                       <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                           <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                           <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                       </filter>
+                   </defs>
+               </svg>
+          </div>
+        </div>
+      </section> 
+      
+      <!-- ============================== About part ===================================== -->
+     <section id="About" class="section-padding">
+          <div class="row py-3">
+            <div class="col-6">
+                <div class="about-img" style="height: 100%; width: 100%;"> 
+                  <img src="images/myself.png" alt="myself" style="height: 100%; width: 100%;">
+                </div>
+            </div>
+            <div class="col-6 text-start">
+                 <h1 class="top-text text-black mb-5" style="display: inline-block; position: relative; font-family: 'Libre Bodoni', serif; font-size: 45px;">Who am I</h1>
+                 <h4 class="text-white"><span class="TYPEDTEXT" style="color: #fff; font-family: 'Instrument Sans', sans-serif; font-size: 20px; font-weight: 500;"></span><span class="CURSOR" style=" display: inline-block; margin-left: 0.1rem; width: 3px; animation: blink 1s infinite;">&nbsp;</span></h4>
+                 <div class="identity mt-4">
+                  <h5 class="text-white" style="float: left; font-family: 'Artifika', serif; font-size: 15px;">Name</h5><h5 class="text-white text-center" style="font-family: 'Artifika', serif; font-size: 15px;">Md. Erfan Alam Emon</h5>
+                 </div>
+                 <div class="identity">
+                  <h5 class="text-white" style="float: left; font-family: 'Artifika', serif; font-size: 15px;">Gender</h5><h5 class="text-white text-center" style="font-family: 'Artifika', serif; font-size: 15px;">Male</h5>
+                 </div>
+                 <div class="identity">
+                  <h5 class="text-white" style="float: left; font-family: 'Artifika', serif; font-size: 15px;">Phone no</h5><h5 class="text-white text-center" style="font-family: 'Artifika', serif; font-size: 15px;">+880 1329474462</h5>
+                 </div>
+                 <div class="identity">
+                  <h5 class="text-white" style="float: left; font-family: 'Artifika', serif; font-size: 15px;">Email</h5><h5 class="text-white text-center" style="font-family: 'Artifika', serif; font-size: 15px;">erfanalamemon94@gmail.com</h5>
+                 </div>
+             </div>            
+        </div>  
+     </section>  
+      
+       <!-- ============================== About2 part ===================================== -->
+   <section id="About2" class="section-padding">
+     <div class="container">
+       <h1 class="text-white" style="position: relative; font-family: 'Libre Bodoni', serif; font-size: 45px; display: inline-block;">My skills</h1>     
+       <div class="row">
+             <div class="col-12 text-start">
+                 <h2 class="sub-text text-black" style="font-family: 'Cherry Swash', cursive; font-size: 30px;" data-aos="fade-right" data-aos-duration="2000"  data-aos-once="true">Web Designer | Graphics Designer | <span class="sub-text" style="font-size: 30px; color: #c1bfbf;">Web Developer | Android Developer</span></h2>
+                 <h5 style="color: #fff; font-family: 'Instrument Sans', sans-serif; font-size: 25px;" data-aos="fade-right" data-aos-duration="2000"  data-aos-once="true">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsump</h5>
+             </div>         
+       </div>
+       <div class="row mt-5">
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                  <h4 class="prgress-text text-black" style=""></h4>
+                  <div class="card d-flex">
+                    <div class="circle">
+                       <div class="bar"></div>
+                       <div class="box"><span></span></div>
+                     </div>
+                     <div class="text d-flex justify-content-center mt-5 pt-5">Web Designer</div> 
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                   <h4 class="prgress-text text-black" style="font-family: 'Instrument Sans', sans-serif; font-size: 25px;"></h4>
+                   <div class="card react d-flex">
+                     <div class="circle">
+                       <div class="bar"></div>
+                       <div class="box"><span></span></div>
+                     </div>
+                     <div class="text d-flex justify-content-center mt-5 pt-5">Graphics Designer</div> 
+                   </div> 
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                  <h4 class="prgrss-text text-black" style="font-family: 'Instrument Sans', sans-serif; font-size: 25px;"></h4>
+                  <div class="card js d-flex">
+                   <div class="circle">
+                       <div class="bar"></div>
+                       <div class="box"><span></span></div>
+                     </div>
+                     <div class="text d-flex justify-content-center mt-5 pt-5">Web Developer</div> 
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                  <h4 class="prgrss-text text-black" style="font-family: 'Instrument Sans', sans-serif; font-size: 25px;"></h4>
+                  <div class="card bool d-flex">
+                    <div class="circle">
+                       <div class="bar"></div>
+                       <div class="box"><span></span></div>
+                     </div>
+                     <div class="text d-flex justify-content-center mt-5 pt-5">Android Developer</div> 
+                  </div>
+                </div>
+        </div>  
+     </div>
+   </section>
+
+      <!-- =============================== About 3 part =================================== -->
+   <section id="About3" class="section-padding">
+      <div class="container">
+        <h1 class="text-white" style="position: relative; font-family: 'Libre Bodoni', serif; font-size: 45px; display: inline-block;">My portfolio</h1> 
+        <div class="row my-5 py-5">
+           <div class="col-6 py-3">
+               <div class="d-flex justify-content-start">
+                  <div class="card px-1 py-5" style="width: 75%;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-family: 'Cherry Swash', cursive; font-size: 30px; color: #C5001E; position: relative;">Web Designer</h5>
+                      <h6 class="card-subtitle mb-2" style="font-family: 'Instrument Sans', sans-serif; font-size: 25px;">2018 - present</h6>
+                      <p class="card-text" style="color: #E31837; font-family: 'Artifika', serif; font-size: 20px;" data-aos="fade-right" data-aos-duration="1000"  data-aos-once="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                    </div>
+                  </div>
+                </div>
+               <div class="d-flex justify-content-end mt-5 mb-0">
+                   <div class="card px-1 py-5" style="width: 75%;">
+                    <div class="card-body">
+                      <h5 class="card-title2" style="font-family: 'Cherry Swash', cursive; font-size: 30px; color: #C5001E; position: relative;">Graphics Designer</h5>
+                      <h6 class="card-subtitle mb-2" style="font-family: 'Instrument Sans', sans-serif; font-size: 25px;">2020 - 2021</h6>
+                      <p class="card-text" style="color: #E31837; font-family: 'Artifika', serif; font-size: 20px;" data-aos="fade-left" data-aos-duration="1000"  data-aos-once="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                    </div>
+                  </div>
+               </div>
+           </div>
+           <div class="col-6 py-3">
+               <div class="d-flex justify-content-end">
+                  <div class="card px-1 py-5" style="width: 75%; background-color: #C5001E;">
+                   <div class="card-body">
+                     <h5 class="card-title3" style="font-family: 'Cherry Swash', cursive; font-size: 30px; color: #fff; position: relative;">Web Developer</h5>
+                     <h6 class="card-subtitle mb-2" style="font-family: 'Instrument Sans', sans-serif; font-size: 25px;">2023(ongoing)</h6>
+                     <p class="card-text" style="color: #fff; font-family: 'Artifika', serif; font-size: 20px;" data-aos="fade-right" data-aos-duration="1000"  data-aos-once="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                   </div>
+                 </div>
+               </div>
+               <div class="d-flex justify-content-start mt-5 mb-0">
+                     <div class="card px-1 py-5" style="width: 75%; background-color: #C5001E;">
+                       <div class="card-body">
+                         <h5 class="card-title4" style="font-family: 'Cherry Swash', cursive; font-size: 30px; color: #fff; position: relative;">Android Developer</h5>
+                         <h6 class="card-subtitle mb-2" style="font-family: 'Instrument Sans', sans-serif; font-size: 25px;">2019 - 2020</h6>
+                         <p class="card-text" style="color: #fff; font-family: 'Artifika', serif; font-size: 20px;" data-aos="fade-left" data-aos-duration="1000"  data-aos-once="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                       </div>
+                     </div>
+               </div>
+           </div>
+        </div>
+      </div>
+   </section>
+      <!-- ============================== Service part ===================================== -->
+    <section id="Service" class="section-padding text-center">
+        <div class="container">
+          <h1 class="top-text text-white" style="position: relative; font-family: 'Libre Bodoni', serif; font-size: 45px; display: inline-block;">What I do</h1>    
+          <div class="row myservices">
+                       <div class="col-sm-12 col-md-6 col-lg-4 mx-2">
+                           <div class="card text-bg-white my-5 gx-2 d-flex py-5 px-5" style="border-radius: 20px; height: 400px;">
+                                 <h2><i class="fa-solid fa-table-cells-large"></i></h2>
+                                 <div class="card-img-overlay text-white">
+                                      <h3 style="font-family: 'Cherry Swash', cursive; font-size: 30px;">Responsive</h3>
+                                      <p style="font-family: 'Quando', serif;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>  
+                                 </div>
+                            </div>
+                       </div>   
+                        <div class="col-sm-12 col-md-6 col-lg-4 mx-2"> 
+                            <div class="card text-bg-white my-5 gx-2 d-flex align-items-center justify-content-center py-5 px-5" style="border-radius: 20px; height: 400px;">
+                                 <h2><i class="fa-solid fa-eye-slash"></i></h2>
+                                 <div class="card-img-overlay text-white">
+                                      <h3 style="font-family: 'Cherry Swash', cursive; font-size: 30px;">Photoshop</h3>
+                                      <p style="font-family: 'Quando', serif;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                 </div>
+                            </div> 
+                        </div>            
+                       <div class="col-sm-12 col-md-6 col-lg-4 mx-2">
+                          <div class="card text-bg-white my-5 gx-2 d-flex align-items-center justify-content-center py-5 px-5" style="border-radius: 20px; height: 400px;">
+                                 <h2><i class="fa-solid fa-wand-magic-sparkles"></i></h2>
+                                 <div class="card-img-overlay text-white">
+                                       <h3 style="font-family: 'Cherry Swash', cursive; font-size: 30px;">UI/UX Design</h3>
+                                       <p style="font-family: 'Quando', serif;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                 </div>
+                            </div> 
+                         </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 mx-2">
+                          <div class="card text-bg-white my-5 gx-2 d-flex align-items-center justify-content-center py-5 px-5" style="border-radius: 20px; height: 400px;">
+                                 <h2><i class="fa-brands fa-js"></i></h2>
+                                 <div class="card-img-overlay text-white">
+                                       <h3 style="font-family: 'Cherry Swash', cursive; font-size: 30px;">Javascript</h3>
+                                       <p style="font-family: 'Quando', serif;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                 </div>
+                            </div> 
+                         </div>
+                    </div>       
+                </div>
+
+    </section>
+      
+      
+    <!-- ============================== Project part ===================================== --> 
+     <section id="Project"  class="section-padding text-center">
+        <div class="container">
+            <h1 class="top-text text-white" style="position: relative; font-family: 'Libre Bodoni', serif; font-size: 45px; display: inline-block;">My projects</h1>
+              <div class="row">
+                  <div class="col-lg-12 py-5">
+                       <div class="button-group text-center filters-button-group">
+                         <button class="my-2 button is-checked" data-filter="*">All</button>
+                         <button class="button" data-filter=".metal">Web Design</button>
+                         <button class="button" data-filter=".transition">UI/UX Design</button>
+                         <button class="button" data-filter=".alkali">Web Development</button>
+                         <button class="button" data-filter=".post-transition">Android Developer</button>
+                       </div>
+                  </div>
+              </div>
+          <div class="row grid gy-4">
+                <div class="col-4 element-item post-transition">
+                     <figure class="snip1543">
+                        <img src="images/project1.jpg" alt="project1" />
+                        <figcaption>
+                          <h2><i class="fa-solid fa-magnifying-glass-plus"></i></h2>
+                          <h4>Food App</h4>
+                        </figcaption>
+                        <a href="#"></a>
+                      </figure>
+                </div>
+                <div class="col-4 element-item metal">
+                        <figure class="snip1543 hover">
+                           <img src="images/project2.jpg" alt="project2" />
+                           <figcaption>
+                             <h2><i class="fa-solid fa-magnifying-glass-plus"></i></h2>
+                             <h4>Responsive Web Design</h4>
+                           </figcaption>
+                           <a href="#"></a>
+                      </figure>
+                </div>
+                <div class="col-4 element-item transition">
+                       <figure class="snip1543">
+                           <img src="images/project3.jpg" alt="project3" />
+                           <figcaption>
+                             <h2><i class="fa-solid fa-magnifying-glass-plus"></i></h2>
+                             <h4>Colorful UI/UX Design</h4>
+                           </figcaption>
+                           <a href="#"></a>
+                      </figure>
+                 </div>
+                <div class="col-4 element-item alkali">
+                       <figure class="snip1543 hover">
+                          <img src="images/project4.PNG" alt="project4" />
+                          <figcaption>
+                            <h2><i class="fa-solid fa-magnifying-glass-plus"></i></h2>
+                            <h4>Created Dashboard</h4>
+                          </figcaption>
+                          <a href="#"></a>
+                      </figure>
+                </div>
+              <div class="col-4 element-item alkali">
+                       <figure class="snip1543">
+                          <img src="images/project5.jpg" alt="project5" />
+                          <figcaption>
+                            <h2><i class="fa-solid fa-magnifying-glass-plus"></i></h2>
+                            <h4>PHP Coding</h4>
+                          </figcaption>
+                          <a href="#"></a>
+                      </figure>
+                </div>
+              <div class="col-4 element-item post-transition">
+                       <figure class="snip1543 hover">
+                          <img src="images/project6.jpg" alt="project6" />
+                          <figcaption>
+                            <h2><i class="fa-solid fa-magnifying-glass-plus"></i></h2>
+                            <h4>Call App</h4>
+                          </figcaption>
+                          <a href="#"></a>
+                      </figure>
+                </div>
+        </div>   
+        </div>
+     </section>
+      
+    <!-- ============================== Team part ===================================== --> 
+      
+    <section id="Team" class="section-padding text-center">
+      <div class = "container">
+        <h1 class="top-text text-white" style="position: relative; font-family: 'Libre Bodoni', serif; font-size: 45px; display: inline-block;">Our Team Members</h1>
+        <div class = "row mt-4 gy-4">
+           <div class = "col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="images/Team1.jpg" class="card-img-top" alt="Team1">
+                <div class="box-content">
+                    <h3 class="title">Jenny Daniels</h3>
+                    <span class="post">WEB DESIGNER</span>
+                </div>
+                <ul class="icon">
+                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                     <li class="twitter"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                     <li class="google-plus"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                     <li class="linkedin"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+              <div class="card-body py-5 px-2">
+                  <h5 class="text-white text-center" data-aos="zoom-in" data-aos-duration="3000"  data-aos-once="true">Quisque sagittis sapien lacus, vitae scelerisque metus consectetur nec. Proin sed ullamcorper diam, eget aliquam augue. Duis auctor aliquet libero, sit amet dignissim magna ultrices at. Vivamus a dolor metus. Mauris purus dolor, pharetra eget consequat a, dapibus sit amet orci. Morbi ac dui est. </h5>
+                </div>
+           </div>
+           <div class = "col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="images/Team2.jpg" class="card-img-top" alt="Team2">
+                <div class="box-content">
+                    <h3 class="title">William Kerry</h3>
+                    <span class="post">GRAPHICS DESIGNER</span>
+                </div>
+                <ul class="icon">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="twitter"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="google-plus"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li class="linkedin"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+              <div class="card-body py-5 px-2" style="background-color:#5D0311;">
+                  <h5 class="text-center" data-aos="zoom-in" data-aos-duration="3000"  data-aos-once="true">Quisque sagittis sapien lacus, vitae scelerisque metus consectetur nec. Proin sed ullamcorper diam, eget aliquam augue. Duis auctor aliquet libero, sit amet dignissim magna ultrices at. Vivamus a dolor metus. Mauris purus dolor, pharetra eget consequat a, dapibus sit amet orci. Morbi ac dui est. </h5>
+                </div>
+           </div>
+           <div class = "col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="images/Team3.jpg" class="card-img-top" alt="Team3">
+                <div class="box-content">
+                     <h3 class="title">John Morison</h3>
+                     <span class="post">WEB DEVELOPER</span>
+                </div>
+                <ul class="icon">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="twitter"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="google-plus"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li class="linkedin"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+               <div class="card-body py-5 px-2">
+                  <h5 class="text-white text-center" data-aos="zoom-in" data-aos-duration="3000"  data-aos-once="true">Quisque sagittis sapien lacus, vitae scelerisque metus consectetur nec. Proin sed ullamcorper diam, eget aliquam augue. Duis auctor aliquet libero, sit amet dignissim magna ultrices at. Vivamus a dolor metus. Mauris purus dolor, pharetra eget consequat a, dapibus sit amet orci. Morbi ac dui est. </h5>
+                </div>
+           </div>
+           <div class = "col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="images/Team4.jpg" class="card-img-top" alt="Team4">
+                <div class="box-content">
+                    <h3 class="title">Micheal Arther</h3>
+                    <span class="post">ANDROID DEVELOPER</span>
+                </div>
+                <ul class="icon">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="twitter"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="google-plus"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li class="linkedin"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+              <div class="card-body py-5 px-2" style="background-color:#5D0311;">
+                  <h5 class="text-center" data-aos="zoom-in" data-aos-duration="3000"  data-aos-once="true">Quisque sagittis sapien lacus, vitae scelerisque metus consectetur nec. Proin sed ullamcorper diam, eget aliquam augue. Duis auctor aliquet libero, sit amet dignissim magna ultrices at. Vivamus a dolor metus. Mauris purus dolor, pharetra eget consequat a, dapibus sit amet orci. Morbi ac dui est. </h5>
+                </div>
+           </div>
+        </div>
+      </div>
+    </section>
+      
+    <!-- ============================== Satisfaction part ===================================== -->  
+    <section id="Satisfaction" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6" data-aos="slide-right" data-aos-duration="2000"  data-aos-once="true">
+                <div class="counter red">
+                    <div class="counter-content">
+                        <div class="counter-icon fa fa-globe"></div>
+                        <span class="counter-value">45</span>
+                    </div>
+                    <h3 class="title">Projects done</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6" data-aos="slide-right" data-aos-duration="2000"  data-aos-once="true">
+                <div class="counter">
+                    <div class="counter-content">
+                        <div class="counter-icon fa fa-rocket"></div>
+                        <span class="counter-value" style="color: rgb(0, 0, 0);">20</span>
+                    </div>
+                    <h3 class="title">Satisfied clients</h3>
+                </div>
+            </div>
+             <div class="col-lg-3 col-md-6 col-sm-6" data-aos="slide-left" data-aos-duration="2000"  data-aos-once="true">
+                <div class="counter">
+                    <div class="counter-content">
+                        <div class="counter-icon fa fa-rocket"></div>
+                        <span class="counter-value">5</span>
+                    </div>
+                    <h3 class="title">Awards</h3>
+                </div>
+            </div>
+             <div class="col-lg-3 col-md-6 col-sm-6" data-aos="slide-left" data-aos-duration="2000"  data-aos-once="true">
+                <div class="counter red">
+                    <div class="counter-content">
+                        <div class="counter-icon fa fa-rocket"></div>
+                        <span class="counter-value" style="color: rgb(0, 0, 0);">10</span>
+                    </div>
+                    <h3 class="title">Happy clients</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      
+    <!-- ============================== Contact part ===================================== -->    
+    <section id="Contact" class="section-padding text-center bg-white">
+        <div class="container">
+            <form>
+                <div class="row gy-1">    
+                   <div class="col-sm-12 col-md-12 col-lg-6">
+                        <label class="input" for="Name">
+                          <input class="input__field" type="text" placeholder=" " name="Name" value="" id="Name" required/>
+                          <span class="input__label">Name</span>
+                        </label>    
+                       <br>
+                       <label class="input" for="Email">
+                          <input class="input__field" type="email" placeholder=" " name="Email" value="" id="Email" required/>
+                          <span class="input__label">Email</span>
+                        </label>   
+                       <br>
+                       <label class="input" for="Phone_Number">
+                          <input class="input__field" type="text" placeholder=" " name="Phone_Number" value="" id="Phone_Number" required/>
+                          <span class="input__label2">Phone Number</span>
+                        </label>   
+                       <label class="input">
+                          <textarea class="input__field2" rows="12" cols="50" required></textarea>   
+                          <span class="input__label2">Message</span>
+                        </label>
+                        <div class="col-2 mx-auto mt-4" style="position: relative;">
+                          <div class="wrap">
+                             <button class="button" type="submit">Submit</button>
+                          </div>
+                   </div>
+                   </div>
+                   <div class="col-sm-12 col-md-12 col-lg-6 bg-transparent" style="border: 2px solid #fff; border-radius: 10px;">
+                       <h1 class="top-text text-white mt-5 ms-0" style="position: relative; font-family: 'Libre Bodoni', serif; font-size: 40px; display: inline-block;">Keep me in touch</h1> 
+                       <div class="card bg-transparent px-3 text-start" style="border:none;">
+                           <h4 style="color:#fff;"><i class="fa-regular fa-envelope"></i></h4> 
+                           <h5 class="mt-0" style="color:#fff; float: left; position: relative;  font-family: 'Instrument Sans', sans-serif;">Email<span class="ms-3" style="color:#fff; font-size: 1.15rem;  font-family: 'Alata', sans-serif;">erfanalamemon94@gmail.com</span></h5>      
+                      </div>
+                      <div class="card bg-transparent px-3 text-start" style="border:none;">
+                           <h4 style="color:#fff;"><i class="fa-regular fa-envelope"></i></h4> 
+                           <h5 class="phn-heading mt-0" style="color:#fff; float: left; position: relative;  font-family: 'Instrument Sans', sans-serif;">Phone<span class="ms-3" style="color:#fff; font-size: 1.15rem; font-family: 'Alata', sans-serif;">+880 1329474462</span></h5>  
+                       </div> 
+                       <div class="card bg-transparent px-3 text-start" style="border:none;">
+                          <h4 style="color:#fff;"><i class="fa-regular fa-envelope"></i></h4> 
+                           <h5 class="addrss-heading mt-0" style="color:#fff; float: left; position: relative; font-family: 'Instrument Sans', sans-serif;">Address<span class="ms-3" style="color:#fff; font-size: 1.15rem; font-family: 'Alata', sans-serif;">House:47, Road:11, Kallyanpur, Mirpur,  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhaka, Bangladesh</span></h5> 
+                       </div>
+                    </div>
+                 </div>      
+             </form>
+        </div>
+      
+    </section>  
+      
+  </main>
+        
+  <footer>
+        <!-- ======================= Social part ================================== -->    
+        <section id="Social" style="margin-top: 0;">
+        <div class="container">
+            <div class="row d-flex align-items-center text-center py-3 px-1">
+                 <div class="col-md order-2 order-md-1"><!-- Social icon 1 -->
+                      <p class= "copyright mb-0">&copy 2018 recognize. All rights reserved | Design by <span>W3layouts</span></p>
+                 </div>
+                 <div class="col-md-auto order-1 order-md-2"><!-- Social icon 2 -->
+                       <nav class="nav d-flex justify-content-center">
+                            <a class="nav-link d-flex icon-facebook mx-1" href="#" style="border: 1px solid #1877F2; justify-content: center; align-items:center;"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="nav-link d-flex icon-twitter mx-1" href="#" style="border: 1px solid #1877F2; justify-content: center; align-items:center;"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="nav-link d-flex icon-googleplus mx-1" href="#" style="border: 1px solid #D54C3F; justify-content: center; align-items:center;"><i class="fa-brands fa-google-plus-g"></i></a>
+                            <a class="nav-link d-flex icon-linkedin mx-1" href="#" style="border: 1px solid #0A63BC; justify-content: center; align-items:center;"><i class="fa-brands fa-linkedin-in"></i></a>
+                       </nav>     
+                 </div>
+            </div>    
+         </div>  
+       </section>      
+  </footer>    
+    <a href="#" class="top"></a>
+</body>
+
+    
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/circle-progress.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/slick.min.js"></script>  
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/isotope.pkgd.js"></script>
+<script src="js/custom.js"></script>    
+<script src="js/aos.js"></script>
+<script>
+      AOS.init({
+         duration: 3000,
+      });
+</script>
+</html>
